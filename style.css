@@ -63,8 +63,8 @@ header {
 
 /* Hero */
 .hero { padding-block: 64px 56px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: center; }
-.hero .eyebrow { margin-bottom: .6em; }
-.hero h1 { font-size: clamp(48px, 9vw, 104px); font-weight: 800; letter-spacing: -.03em; line-height: 1.12; padding-top: .14em; }
+.hero .eyebrow { margin-bottom: 20px; }
+.hero h1 { font-size: clamp(48px, 9vw, 104px); font-weight: 800; letter-spacing: -.03em; line-height: 1.12; padding-top: .22em; }
 .hero h1 .hl { background: var(--bright); color: var(--on-color); padding: 0 .12em; border-radius: .12em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .hero h1 .wave { display: inline-block; transform-origin: 70% 70%; animation: wave 2.4s ease-in-out 0.4s 2; }
 @keyframes wave { 0%,60%,100% { transform: rotate(0); } 10%,30% { transform: rotate(14deg); } 20% { transform: rotate(-8deg); } }
