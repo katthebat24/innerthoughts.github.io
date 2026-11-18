@@ -44,17 +44,3 @@ drawArt();
 window.addEventListener('resize', drawArt);
 if (document.fonts) document.fonts.ready.then(drawArt);
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawArt);
-
-// Copy email button. Change this to your real email address.
-const email = 'you@example.com';
-document.getElementById('copied').textContent = email;
-document.getElementById('copy-email').addEventListener('click', () => {
-  const out = document.getElementById('copied');
-  navigator.clipboard.writeText(email)
-    .then(() => { out.textContent = 'Copied ' + email; })
-    .catch(() => {
-      out.textContent = email;
-      const sel = window.getSelection(), rg = document.createRange();
-      rg.selectNodeContents(out); sel.removeAllRanges(); sel.addRange(rg);
-    });
-});
