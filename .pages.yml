@@ -1,0 +1,123 @@
+# Settings for Pages CMS (https://app.pagescms.org), the no-code editor for this site.
+media:
+  input: images
+  output: /innerthoughts.github.io/images
+
+content:
+  - name: posts
+    label: Blog posts
+    type: collection
+    path: _posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date]
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: category
+        label: Topic (optional)
+        description: A short label shown under the title, like "economics" or "personal".
+        type: string
+      - name: layout
+        type: string
+        default: post
+        hidden: true
+      - name: body
+        label: Post
+        type: rich-text
+
+  - name: site
+    label: About me & page text
+    type: file
+    path: _data/site.yml
+    fields:
+      - name: name
+        label: Your name
+        type: string
+      - name: eyebrow
+        label: Small line above your name
+        type: string
+      - name: intro
+        label: Intro under your name
+        type: text
+      - name: photo
+        label: Photo
+        type: image
+      - name: sticker
+        label: Sticker next to your photo
+        type: string
+      - name: about_title
+        label: About section heading
+        type: string
+      - name: bio
+        label: Bio
+        type: text
+      - name: facts
+        label: Quick facts
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Label (e.g. From), type: string }
+          - { name: value, label: Fact, type: string }
+      - name: banner
+        label: Words in the scrolling banner
+        type: string
+        list: true
+      - name: projects_intro
+        label: Line next to the Projects heading
+        type: string
+      - name: blog_intro
+        label: Line next to the Blog heading
+        type: string
+      - name: contact_title
+        label: Contact heading
+        type: string
+      - name: contact_text
+        label: Contact text
+        type: string
+      - name: socials
+        label: Social links
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Name (e.g. Instagram), type: string }
+          - { name: url, label: Link, type: string }
+
+  - name: projects
+    label: Projects
+    type: file
+    path: _data/projects.yml
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: status
+        label: Status
+        type: select
+        options:
+          values: [Shipped, In progress, Just an idea]
+      - name: description
+        label: Description
+        type: text
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: link
+        label: Link (optional)
+        type: string
+      - name: image
+        label: Cover image (optional, otherwise colorful shapes are used)
+        type: image

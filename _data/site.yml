@@ -1,0 +1,34 @@
+name: Kat Garland
+eyebrow: Economics · Public policy · Writing
+intro: >-
+  I'm a senior at St. Mark's School from Washington, DC, interested in
+  **economics and public policy**. This is where I'll share my projects and writing.
+photo: /innerthoughts.github.io/images/me.jpg
+sticker: hi from DC!
+banner:
+  - Economics
+  - Public policy
+  - Washington, DC
+  - Projects
+  - Writing
+  - Big questions
+about_title: A little about me
+bio: More about me is coming soon.
+facts:
+  - label: From
+    value: Washington, DC
+  - label: School
+    value: Senior at St. Mark's School, Massachusetts
+  - label: Into
+    value: Economics and public policy
+projects_intro: What I'm working on. Projects are coming soon.
+blog_intro: Writing on economics, policy, and whatever I'm thinking about.
+contact_title: Let's talk!
+contact_text: Want to say hi? You can find me here.
+socials:
+  - label: Instagram
+    url: https://www.instagram.com/katgarlandd/
+  - label: YouTube
+    url: https://www.youtube.com/@katemperatriz
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/katherine-garland-2647a524a/

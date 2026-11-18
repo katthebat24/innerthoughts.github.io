@@ -1,0 +1,12 @@
+{% include head.html %}
+<main class="article-page">
+  <article class="wrap article">
+    <a class="back" href="{{ '/' | relative_url }}#blog">← All posts</a>
+    <p class="eyebrow">{{ page.date | date: "%B %-d, %Y" }}{% if page.category %} · {{ page.category }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    <div class="article-body">
+      {{ content }}
+    </div>
+  </article>
+</main>
+{% include foot.html %}

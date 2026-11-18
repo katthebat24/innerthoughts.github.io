@@ -1,27 +1,27 @@
-# My website
+# Kat Garland's website
 
-A personal site with projects, an about section, a blog and contact links.
+Live at https://katthebat24.github.io/innerthoughts.github.io/
 
-## Files
+## Editing without code
 
-- `index.html`: all the words and sections. Edit this to change what the site says.
-- `style.css`: colors, fonts and layout. The colors are at the very top.
-- `script.js`: the colorful project card artwork.
-- `me.jpg`: your photo.
+Go to https://app.pagescms.org, sign in with GitHub, and open this repository. You'll see:
 
-## Put it online with GitHub Pages (free)
+- **Blog posts:** write, edit or delete posts.
+- **About me & page text:** name, intro, photo, bio, quick facts, banner words and social links.
+- **Projects:** add projects with a title, status, description, tags, link and image.
 
-1. Sign in at github.com, or make a free account.
-2. Create a new repository. Name it `YOUR-USERNAME.github.io` to get the address `https://YOUR-USERNAME.github.io`, and make it **Public**.
-3. Click **Add file → Upload files**, drag in `index.html`, `style.css`, `script.js` and `me.jpg`, then click **Commit changes**.
-4. Go to **Settings → Pages**. Under "Build and deployment", choose **Deploy from a branch**, pick the `main` branch and the `/ (root)` folder, then click **Save**.
-5. After a minute or two, your site is live at `https://YOUR-USERNAME.github.io`.
+Click **Save** and the live site updates a minute or two later.
 
-To update the site later, upload the changed files again in the same repository.
+## How the site is built
 
-## Common edits
+GitHub Pages builds the site with Jekyll.
 
-- **Add a project:** copy one `<article class="proj">…</article>` block and change the text. Give the new canvas the next number, like `data-art="3"`.
-- **Add a blog post:** copy one `<details class="post">…</details>` block and put it at the top of the list. Only the newest post should keep the word `open`.
-- **Links:** change the Instagram, YouTube and LinkedIn addresses near the bottom of `index.html`.
-- **Photo:** upload a new picture named `me.jpg` to replace the current one.
+- `_data/site.yml`: page text, facts and social links
+- `_data/projects.yml`: projects
+- `_posts/`: blog posts, one file each
+- `images/`: photos
+- `index.html`, `_layouts/`, `_includes/`: page templates
+- `style.css`: colors, fonts and layout
+- `.pages.yml`: settings for the Pages CMS editor
+
+If the repository is renamed to `katthebat24.github.io`, set `baseurl: ""` in `_config.yml`, change the media `output` in `.pages.yml` to `/images`, and change `photo` in `_data/site.yml` to `/images/me.jpg`.

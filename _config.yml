@@ -1,0 +1,11 @@
+# Site settings. If you rename the repository to katthebat24.github.io,
+# change baseurl to "" and update the media path in .pages.yml.
+title: Kat Garland
+description: "Kat Garland: a senior at St. Mark's School interested in economics and public policy."
+baseurl: "/innerthoughts.github.io"
+url: "https://katthebat24.github.io"
+permalink: /blog/:title/
+markdown: kramdown
+exclude:
+  - README.md
+  - .pages.yml
